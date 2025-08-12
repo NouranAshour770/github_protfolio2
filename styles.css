@@ -18,3 +18,33 @@ header { background: linear-gradient(135deg, #1a1a1a, #333333); }
 .contact-section a:hover{ opacity:.85; }
 .contact-section i{ width:22px; text-align:center; }
 
+/* ===== Extracurricular ===== */
+.activity-card{
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+}
+
+.activity-img{
+  border-radius: 14px;
+  transition: transform .35s ease, box-shadow .35s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.activity-img:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+
+.book-img{
+  height: 260px;
+  object-fit: cover;
+}
+
+#activities .card{
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+#activities .card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+}
