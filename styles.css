@@ -1,0 +1,20 @@
+/* Base */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+header { background: linear-gradient(135deg, #1a1a1a, #333333); }
+
+/* Cards */
+.card-img-top { height: 250px; object-fit: cover; }
+#certifications .card-img-top { height: 180px; } /* تصغير صور الشهادات عشان تبقى زي المشاريع */
+
+/* Contact section */
+.contact-section{
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color:#fff;
+}
+.icon-wrapper{ display:flex; align-items:center; gap:10px; margin:6px 0; }
+.contact-section a{
+  color:#fff; text-decoration:none; font-weight:500; transition:opacity .2s ease;
+}
+.contact-section a:hover{ opacity:.85; }
+.contact-section i{ width:22px; text-align:center; }
+
