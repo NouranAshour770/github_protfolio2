@@ -46,3 +46,28 @@ header { background: linear-gradient(135deg, #1a1a1a, #333333); }
 #student-projects h2{
   font-weight: 700;
 }
+/* === Visual Creations (masonry-like grid, no cards) === */
+.vc-grid {
+  column-count: 1;
+  column-gap: 1rem;
+}
+
+.vc-item {
+  width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 16px;
+  display: inline-block;          /* مهم عشان ال-columns */
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+.vc-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.14);
+  filter: saturate(1.05) contrast(1.02);
+}
+
+/* استجابة */
+@media (min-width: 576px) { .vc-grid { column-count: 2; } }
+@media (min-width: 768px) { .vc-grid { column-count: 3; } }
+@media (min-width: 1200px){ .vc-grid { column-count: 4; } }
